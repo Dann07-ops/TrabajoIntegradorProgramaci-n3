@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Inicio</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">🍔 Food Store</div>
+      <div class="navbar-links">
+        <a href="home.html" class="active">Inicio</a>
+        <a href="/src/pages/client/orders/orders.html">Mis Pedidos</a>
+        <a href="/src/pages/store/cart/cart.html" class="carrito-link">
+          🛒 Carrito
+          <span id="carrito-badge" class="carrito-badge hidden">0</span>
+        </a>
+        <span id="usuario-nombre"></span>
+        <button id="btn-cerrar-sesion" class="btn-secondary">
+          Cerrar Sesión
+        </button>
+      </div>
+    </nav>
+
+    <div class="store-layout">
+      <!-- SIDEBAR CATEGORÍAS -->
+      <aside class="sidebar-categorias">
+        <h3>Categorías</h3>
+        <p class="sidebar-sub">Filtra por categoría</p>
+        <ul id="lista-categorias" class="categorias-list"></ul>
+      </aside>
+
+      <!-- CONTENIDO PRINCIPAL -->
+      <main class="store-main">
+        <!-- BARRA DE BÚSQUEDA Y FILTROS -->
+        <div class="search-bar">
+          <input
+            type="text"
+            id="input-busqueda"
+            placeholder="🔍 Buscar productos..."
+            class="input-busqueda"
+          />
+          <select id="select-orden" class="select-orden">
+            <option value="">Ordenar por</option>
+            <option value="nombre-asc">Nombre A-Z</option>
+            <option value="nombre-desc">Nombre Z-A</option>
+            <option value="precio-asc">Precio menor a mayor</option>
+            <option value="precio-desc">Precio mayor a menor</option>
+          </select>
+          <select id="select-disponibilidad" class="select-orden">
+            <option value="todos">Todos</option>
+            <option value="disponibles">Solo disponibles</option>
+          </select>
+        </div>
+
+        <!-- CONTADOR -->
+        <p id="contador-productos" class="contador-productos"></p>
+
+        <!-- GRID DE PRODUCTOS -->
+        <div id="grid-productos" class="grid-productos"></div>
+      </main>
+    </div>
+    <script type="module" src="home.ts"></script>
+  </body>
+</html>

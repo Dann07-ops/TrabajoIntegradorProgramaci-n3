@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesa Clásica",
+    "descripcion": "Carne 150g, lechuga, tomate, cebolla morada y mayonesa",
+    "precio": 4500,
+    "stock": 30,
+    "imagen": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
+    "disponible": true,
+    "categoriaId": 1,
+    "categoriaNombre": "Hamburguesas"
+  },
+  {
+    "id": 2,
+    "nombre": "Hamburguesa Doble",
+    "descripcion": "Doble carne 150g c/u, cheddar, panceta y salsa barbacoa",
+    "precio": 6200,
+    "stock": 40,
+    "imagen": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400",
+    "disponible": true,
+    "categoriaId": 1,
+    "categoriaNombre": "Hamburguesas"
+  },
+  {
+    "id": 3,
+    "nombre": "Hamburguesa Completa",
+    "descripcion": "Carne 150g, huevo, jamón, queso, lechuga y tomate",
+    "precio": 5500,
+    "stock": 30,
+    "imagen": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400",
+    "disponible": true,
+    "categoriaId": 1,
+    "categoriaNombre": "Hamburguesas"
+  },
+  {
+    "id": 4,
+    "nombre": "Hamburguesa Veggie",
+    "descripcion": "Medallón de lentejas y quinoa, rúcula, tomate confitado y hummus",
+    "precio": 5000,
+    "stock": 20,
+    "imagen": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400",
+    "disponible": true,
+    "categoriaId": 1,
+    "categoriaNombre": "Hamburguesas"
+  },
+  {
+    "id": 5,
+    "nombre": "Pizza Mozzarella",
+    "descripcion": "Mozzarella, salsa de tomate y orégano",
+    "precio": 3800,
+    "stock": 25,
+    "imagen": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400",
+    "disponible": true,
+    "categoriaId": 2,
+    "categoriaNombre": "Pizzas"
+  },
+  {
+    "id": 6,
+    "nombre": "Pizza Napolitana",
+    "descripcion": "Mozzarella, rodajas de tomate, ajo, aceitunas y albahaca",
+    "precio": 4500,
+    "stock": 25,
+    "imagen": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
+    "disponible": true,
+    "categoriaId": 2,
+    "categoriaNombre": "Pizzas"
+  },
+  {
+    "id": 7,
+    "nombre": "Empanada de Carne",
+    "descripcion": "Carne picada, cebolla, huevo duro y aceitunas",
+    "precio": 1200,
+    "stock": 50,
+    "imagen": "/src/assets/empanada.jpg",
+    "disponible": true,
+    "categoriaId": 3,
+    "categoriaNombre": "Empanadas"
+  },
+ {
+  "id": 8,
+  "nombre": "Empanada de Jamón y Queso",
+  "descripcion": "Jamón cocido y queso cremoso",
+  "precio": 1100,
+  "stock": 50,
+  "imagen": "https://www.clarin.com/img/2021/04/12/WYz8Yr8tB_1256x620__1.jpg", 
+  "disponible": true,
+  "categoriaId": 3,
+  "categoriaNombre": "Empanadas"
+},
+
+{
+    "id": 9,
+    "nombre": "Cerveza Artesanal 473ml",
+    "descripcion": "Cerveza rubia artesanal de producción local",
+    "precio": 2500,
+    "stock": 60,
+    "imagen": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?w=400",
+    "disponible": true,
+    "categoriaId": 4,
+    "categoriaNombre": "Bebidas"
+  },
+  {
+    "id": 10,
+    "nombre": "Gaseosa 500ml",
+    "descripcion": "Coca-Cola, Sprite o Fanta",
+    "precio": 1200,
+    "stock": 80,
+    "imagen": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
+    "disponible": true,
+    "categoriaId": 4,
+    "categoriaNombre": "Bebidas"
+  },
+  {
+    "id": 11,
+    "nombre": "Papas Fritas Clásicas",
+    "descripcion": "Papas fritas crocantes con sal",
+    "precio": 1800,
+    "stock": 40,
+    "imagen": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400",
+    "disponible": true,
+    "categoriaId": 5,
+    "categoriaNombre": "Papas Fritas"
+  },
+  {
+    "id": 12,
+    "nombre": "Papas con Cheddar",
+    "descripcion": "Papas fritas con salsa cheddar y panceta",
+    "precio": 2800,
+    "stock": 35,
+    "imagen": "https://images.unsplash.com/photo-1585109649139-366815a0d713?w=400",
+    "disponible": true,
+    "categoriaId": 5,
+    "categoriaNombre": "Papas Fritas"
+  }
+]

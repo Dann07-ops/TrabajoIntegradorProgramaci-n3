@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Detalle de Producto</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="productDetail.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">🍔 Food Store</div>
+      <div class="navbar-links">
+        <a href="/src/pages/store/home/home.html">Inicio</a>
+        <a href="/src/pages/client/orders/orders.html">Mis Pedidos</a>
+        <a href="/src/pages/store/cart/cart.html" class="carrito-link">
+          🛒 Carrito
+          <span id="carrito-badge" class="carrito-badge hidden">0</span>
+        </a>
+        <span id="usuario-nombre"></span>
+        <button id="btn-cerrar-sesion" class="btn-secondary">
+          Cerrar Sesión
+        </button>
+      </div>
+    </nav>
+
+    <main class="detalle-main">
+      <div id="detalle-container" class="detalle-container"></div>
+    </main>
+
+    <script type="module" src="productDetail.ts"></script>
+  </body>
+</html>

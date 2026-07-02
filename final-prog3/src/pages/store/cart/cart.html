@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Mi Carrito</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">🍔 Food Store</div>
+      <div class="navbar-links">
+        <a href="/src/pages/store/home/home.html">Inicio</a>
+        <a href="/src/pages/client/orders/orders.html">Mis Pedidos</a>
+        <a href="cart.html" class="active carrito-link">
+          🛒 Carrito
+          <span id="carrito-badge" class="carrito-badge hidden">0</span>
+        </a>
+        <span id="usuario-nombre"></span>
+        <button id="btn-cerrar-sesion" class="btn-secondary">
+          Cerrar Sesión
+        </button>
+      </div>
+    </nav>
+
+    <main class="cart-main">
+      <h2>Mi Carrito</h2>
+      <div class="cart-layout">
+        <!-- LISTA DE PRODUCTOS -->
+        <div id="lista-carrito" class="lista-carrito"></div>
+
+        <!-- RESUMEN -->
+        <div class="resumen-pedido">
+          <h3>Resumen del Pedido</h3>
+          <div class="resumen-item">
+            <span>Subtotal</span>
+            <span id="subtotal">$0</span>
+          </div>
+          <div class="resumen-item">
+            <span>Envío</span>
+            <span style="font-size:0.8rem; color:#94a3b8;">
+              Retiro en local
+            </span>
+          </div>
+          <div class="resumen-item resumen-total">
+            <span>Total</span>
+            <span id="total">$0</span>
+          </div>
+
+          <!-- DATOS DE CONTACTO -->
+          <div class="forma-pago-section">
+            <h4>📍 Datos de Contacto</h4>
+            <div class="form-group">
+              <label for="input-telefono">Teléfono</label>
+              <input
+                type="text"
+                id="input-telefono"
+                placeholder="Tu número de teléfono"
+              />
+            </div>
+            <div class="form-group">
+              <label for="input-direccion">Dirección</label>
+              <input
+                type="text"
+                id="input-direccion"
+                placeholder="Tu dirección"
+              />
+            </div>
+          </div>
+
+          <!-- FORMA DE PAGO -->
+          <div class="forma-pago-section">
+            <h4>Forma de Pago</h4>
+            <div class="forma-pago-opciones">
+              <label class="forma-pago-opcion">
+                <input type="radio" name="formaPago" value="TARJETA" />
+                <span>💳 Tarjeta</span>
+              </label>
+              <label class="forma-pago-opcion">
+                <input type="radio" name="formaPago" value="TRANSFERENCIA" />
+                <span>🏦 Transferencia</span>
+              </label>
+              <label class="forma-pago-opcion">
+                <input type="radio" name="formaPago" value="EFECTIVO" checked />
+                <span>💵 Efectivo</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="error-pago" class="error-pago hidden">
+            Seleccioná una forma de pago
+          </div>
+
+          <button id="btn-confirmar" class="btn-primary btn-full">
+            Confirmar Pedido
+          </button>
+          <button
+            id="btn-vaciar"
+            class="btn-secondary btn-full"
+            style="margin-top:0.5rem"
+          >
+            Vaciar Carrito
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL CONFIRMACIÓN -->
+    <div id="modal-confirmacion" class="modal-overlay hidden">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>✅ Pedido Confirmado</h3>
+        </div>
+        <div class="modal-contenido">
+          <div class="confirmacion-icon">🎉</div>
+          <p class="confirmacion-texto">
+            ¡Tu pedido fue realizado exitosamente!
+          </p>
+          <div id="confirmacion-detalle" class="confirmacion-detalle"></div>
+          <button id="btn-ver-pedidos" class="btn-primary btn-full">
+            Ver Mis Pedidos
+          </button>
+          <button
+            id="btn-seguir-comprando"
+            class="btn-secondary btn-full"
+            style="margin-top:0.5rem"
+          >
+            Seguir Comprando
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="cart.ts"></script>
+  </body>
+</html>

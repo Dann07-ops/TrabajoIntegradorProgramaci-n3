@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "usuarioId": 2,
+    "usuarioNombre": "Juan Pérez",
+    "fecha": "2026-06-07",
+    "estado": "completed",
+    "formaPago": "TRANSFERENCIA",
+    "celular": "1198765432",
+    "detalles": [
+      {
+        "productoId": 1,
+        "productoNombre": "Hamburguesa Clásica",
+        "cantidad": 2,
+        "precioUnitario": 4500,
+        "subtotal": 9000
+      },
+      {
+        "productoId": 11,
+        "productoNombre": "Papas Fritas Clásicas",
+        "cantidad": 1,
+        "precioUnitario": 1800,
+        "subtotal": 1800
+      }
+    ],
+    "total": 10800
+  },
+  {
+    "id": 2,
+    "usuarioId": 2,
+    "usuarioNombre": "Juan Pérez",
+    "fecha": "2026-06-08",
+    "estado": "processing",
+    "formaPago": "TARJETA",
+    "celular": "1198765432",
+    "detalles": [
+      {
+        "productoId": 2,
+        "productoNombre": "Hamburguesa Doble",
+        "cantidad": 1,
+        "precioUnitario": 6200,
+        "subtotal": 6200
+      },
+      {
+        "productoId": 5,
+        "productoNombre": "Pizza Mozzarella",
+        "cantidad": 1,
+        "precioUnitario": 3800,
+        "subtotal": 3800
+      },
+      {
+        "productoId": 11,
+        "productoNombre": "Papas Fritas Clásicas",
+        "cantidad": 2,
+        "precioUnitario": 1800,
+        "subtotal": 3600
+      }
+    ],
+    "total": 13600
+  },
+  {
+    "id": 3,
+    "usuarioId": 2,
+    "usuarioNombre": "Juan Pérez",
+    "fecha": "2026-06-09",
+    "estado": "pending",
+    "formaPago": "TRANSFERENCIA",
+    "celular": "1198765432",
+    "detalles": [
+      {
+        "productoId": 7,
+        "productoNombre": "Empanada de Carne",
+        "cantidad": 3,
+        "precioUnitario": 1200,
+        "subtotal": 3600
+      },
+      {
+        "productoId": 9,
+        "productoNombre": "Cerveza Artesanal 473ml",
+        "cantidad": 1,
+        "precioUnitario": 2500,
+        "subtotal": 2500
+      }
+    ],
+    "total": 6100
+  }
+]

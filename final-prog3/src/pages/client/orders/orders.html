@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Mis Pedidos</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="orders.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">🍔 Food Store</div>
+      <div class="navbar-links">
+        <a href="/src/pages/store/home/home.html">Inicio</a>
+        <a href="orders.html" class="active">Mis Pedidos</a>
+        <a href="/src/pages/store/cart/cart.html" class="carrito-link">
+          🛒 Carrito
+          <span id="carrito-badge" class="carrito-badge hidden">0</span>
+        </a>
+        <span id="usuario-nombre"></span>
+        <button id="btn-cerrar-sesion" class="btn-secondary">
+          Cerrar Sesión
+        </button>
+      </div>
+    </nav>
+
+    <main class="orders-main">
+      <div class="orders-header">
+        <h2>Mis Pedidos</h2>
+        <select id="filtro-estado" class="filtro-select">
+          <option value="todos">Todos</option>
+          <option value="pending">Pendiente</option>
+          <option value="processing">En Preparación</option>
+          <option value="completed">Entregado</option>
+          <option value="cancelled">Cancelado</option>
+        </select>
+      </div>
+
+      <div id="lista-pedidos" class="lista-pedidos"></div>
+    </main>
+
+    <!-- MODAL DETALLE -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="modal-titulo">Detalle del Pedido</h3>
+          <button id="btn-cerrar-modal" class="btn-cerrar-modal">✕</button>
+        </div>
+        <div id="modal-contenido" class="modal-contenido"></div>
+      </div>
+    </div>
+
+    <script type="module" src="orders.ts"></script>
+  </body>
+</html>

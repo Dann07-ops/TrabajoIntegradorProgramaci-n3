@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Panel Admin</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="adminHome.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-links">
+        <a href="/src/pages/store/home/home.html">Tienda</a>
+        <a href="adminHome.html" class="active">Panel Admin</a>
+        <span id="usuario-nombre"></span>
+        <button id="btn-cerrar-sesion" class="btn-secondary">
+          Cerrar Sesión
+        </button>
+      </div>
+    </nav>
+
+    <div class="admin-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <p class="sidebar-title">Administración</p>
+        <p class="sidebar-subtitle">Panel de control</p>
+        <nav class="sidebar-nav">
+          <a href="adminHome.html" class="sidebar-link active">Dashboard</a>
+          <a href="../categories/categories.html" class="sidebar-link">Categorías</a>
+          <a href="../products/products.html" class="sidebar-link">Productos</a>
+          <a href="../orders/orders.html" class="sidebar-link">Pedidos</a>
+          <a href="/src/pages/store/home/home.html" class="sidebar-link">Ver Tienda</a>
+        </nav>
+      </aside>
+
+      <!-- CONTENIDO PRINCIPAL -->
+      <main class="admin-main">
+        <h2>Panel de Administración</h2>
+
+        <!-- TARJETAS DE ESTADÍSTICAS -->
+        <div class="stats-grid">
+          <div class="stat-card stat-orange">
+            <div class="stat-icon">📦</div>
+            <div class="stat-info">
+              <p class="stat-label">Categorías</p>
+              <p id="total-categorias" class="stat-value">0</p>
+            </div>
+            <a href="../categories/categories.html" class="btn-primary">Gestionar</a>
+          </div>
+
+          <div class="stat-card stat-pink">
+            <div class="stat-icon">🍔</div>
+            <div class="stat-info">
+              <p class="stat-label">Productos</p>
+              <p id="total-productos" class="stat-value">0</p>
+            </div>
+            <a href="../products/products.html" class="btn-primary">Gestionar</a>
+          </div>
+
+          <div class="stat-card stat-cyan">
+            <div class="stat-icon">🛒</div>
+            <div class="stat-info">
+              <p class="stat-label">Pedidos</p>
+              <p id="total-pedidos" class="stat-value">0</p>
+            </div>
+            <a href="../orders/orders.html" class="btn-primary">Gestionar</a>
+          </div>
+
+          <div class="stat-card stat-green">
+            <div class="stat-icon">✅</div>
+            <div class="stat-info">
+              <p class="stat-label">Disponibles</p>
+              <p id="total-disponibles" class="stat-value">0</p>
+            </div>
+            <p class="stat-sub">Productos activos</p>
+          </div>
+        </div>
+
+        <!-- RESUMEN RÁPIDO -->
+        <div class="resumen-grid">
+          <div class="resumen-card">
+            <h3>💰 Resumen Rápido</h3>
+            <div class="resumen-item">
+              <span>Ingresos Totales</span>
+              <span id="ingresos-totales" class="resumen-valor highlight">$0</span>
+            </div>
+            <div class="resumen-item">
+              <span>Pedidos Pendientes</span>
+              <span id="pedidos-pendientes" class="resumen-valor">0</span>
+            </div>
+            <div class="resumen-item">
+              <span>En Preparación</span>
+              <span id="pedidos-preparacion" class="resumen-valor">0</span>
+            </div>
+            <div class="resumen-item">
+              <span>Completados</span>
+              <span id="pedidos-completados" class="resumen-valor">0</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="adminHome.ts"></script>
+  </body>
+</html>

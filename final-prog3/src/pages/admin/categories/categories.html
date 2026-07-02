@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Gestión de Categorías</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="categories.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">🍔 Food Store</div>
+      <div class="navbar-links">
+        <a href="/src/pages/store/home/home.html">Tienda</a>
+        <a href="../adminHome/adminHome.html">Panel Admin</a>
+        <span id="usuario-nombre"></span>
+        <button id="btn-cerrar-sesion" class="btn-secondary">
+          Cerrar Sesión
+        </button>
+      </div>
+    </nav>
+
+    <div class="admin-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <p class="sidebar-title">Administración</p>
+        <p class="sidebar-subtitle">Panel de control</p>
+        <nav class="sidebar-nav">
+          <a href="../adminHome/adminHome.html" class="sidebar-link">Dashboard</a>
+          <a href="categories.html" class="sidebar-link active">Categorías</a>
+          <a href="../products/products.html" class="sidebar-link">Productos</a>
+          <a href="../orders/orders.html" class="sidebar-link">Pedidos</a>
+          <a href="/src/pages/store/home/home.html" class="sidebar-link">Ver Tienda</a>
+        </nav>
+      </aside>
+
+      <!-- CONTENIDO PRINCIPAL -->
+      <main class="admin-main">
+        <div class="main-header">
+          <h2>Gestión de Categorías</h2>
+          <button id="btn-nueva-categoria" class="btn-primary">
+            + Nueva Categoría
+          </button>
+        </div>
+
+        <div class="tabla-container">
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-categorias"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <!-- MODAL NUEVA/EDITAR CATEGORÍA -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="modal-titulo">Nueva Categoría</h3>
+          <button id="btn-cerrar-modal" class="btn-cerrar-modal">✕</button>
+        </div>
+        <div class="modal-contenido">
+          <div class="form-group">
+            <label for="input-nombre">Nombre</label>
+            <input
+              type="text"
+              id="input-nombre"
+              placeholder="Nombre de la categoría"
+            />
+          </div>
+          <div class="form-group">
+            <label for="input-descripcion">Descripción</label>
+            <input
+              type="text"
+              id="input-descripcion"
+              placeholder="Descripción"
+            />
+          </div>
+          <div id="modal-error" class="error-message hidden"></div>
+          <div class="modal-acciones">
+            <button id="btn-cancelar" class="btn-secondary">Cancelar</button>
+            <button id="btn-guardar" class="btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="categories.ts"></script>
+  </body>
+</html>
