@@ -121,7 +121,7 @@ foodstore-backend/data/jpa_db.mv.db
 ## 🔗 Enlaces
 
 - 📹 Video demostración: [https://youtu.be/no9g4mBJHGs]
-- 📄 Documentación PDF: [[text](<../FOOD STORE.pdf>)]
+- 📄 Documentación PDF:  [Ver Documentación](./FOOD%20STORE.pdf)
 
 ---
 
